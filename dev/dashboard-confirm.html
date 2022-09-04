@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imports the CSS for the page -->
+    <link rel="stylesheet" href="styles/universal.css" />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+
+    <!-- Imports FontAwesome icon library -->
+    <script
+      src="https://kit.fontawesome.com/5d5f7bf628.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Imports the Javascript for the page -->
+    <script defer type="module" src="scripts/dashboardController.js"></script>
+
+    <!-- Icon and Title: Shows up in browser tab -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/title-icon.ico"
+    />
+    <title>Respect My Sister</title>
+  </head>
+  <body>
+    <!-- Makes an invisible box around everything -->
+    <div id="everything-box" class="rel flexc">
+      <div id="insulation" class="rel flexc">
+        <main class="rel flexc">
+          <!-- Confirmation Area: Contains confirmation of update or delete and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="confirm-area" class="rel flexc area target">
+            <h2>Confirmation</h2>
+            <p>
+              Once the changes are updated, your confirmation will be posted
+              below.
+            </p>
+            <div id="confirm-area-insert" class="rel insert">
+              <!-- Filled by confirmView -->
+            </div>
+            <div
+              id="confirm-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="confirm-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imports the CSS for the page -->
+    <link rel="stylesheet" href="styles/universal.css" />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+
+    <!-- Imports FontAwesome icon library -->
+    <script
+      src="https://kit.fontawesome.com/5d5f7bf628.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Imports the Javascript for the page -->
+    <script defer type="module" src="scripts/dashboardController.js"></script>
+
+    <!-- Icon and Title: Shows up in browser tab -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/title-icon.ico"
+    />
+    <title>Respect My Sister</title>
+  </head>
+  <body>
+    <!-- Makes an invisible box around everything -->
+    <div id="everything-box" class="rel flexc">
+      <div id="insulation" class="rel flexc">
+        <main class="rel flexc">
+          <!-- Form Area: Contains Category and Action selection fields and submit and reset buttons -->
+          <!-- Only div that shows initially -->
+          <div id="form-area" class="rel flexc area">
+            <form class="rel">
+              <div id="category-list" class="rel flexc list">
+                <h2>1. Choose a Category</h2>
+                <p>What database would you like to use?</p>
+                <select id="categories" class="rel options" required>
+                  <option value="select" selected>Select</option>
+                  <option value="Chapter">Chapters</option>
+                  <option value="Event">Events</option>
+                  <option value="Faqs">FAQs</option>
+                  <option value="Invoice">Invoices</option>
+                  <option value="Media">Media</option>
+                  <option value="MediaReview">Media Reviews</option>
+                  <option value="Product">Products</option>
+                  <option value="ProductReview">Product Reviews</option>
+                  <option value="Service">Services</option>
+                  <option value="Transaction">Transactions</option>
+                  <option value="User">Users</option>
+                  <option value="Vendor">Vendors</option>
+                  <option value="Header">Website Headers</option>
+                  <option value="Info">Website Information</option>
+                </select>
+              </div>
+              <div id="action-list" class="rel flexc list">
+                <h2>2. Choose an Action</h2>
+                <p>What would you like to do in that database?</p>
+                <select id="actions" class="rel flexr options" required>
+                  <option value="select" selected>Select</option>
+                  <option value="create">Create</option>
+                  <option value="search">Search</option>
+                  <option value="update">Update</option>
+                  <option value="delete">Delete</option>
+                </select>
+              </div>
+              <div
+                id="form-area-submit-reset-box"
+                class="rel flexr submit-reset-box"
+              >
+                <div
+                  id="form-area-submit-btn"
+                  data-btn="submit"
+                  class="rel interface-btn"
+                >
+                  <span>Submit</span>
+                </div>
+                <div
+                  id="form-area-reset-btn"
+                  data-btn="reset"
+                  class="rel interface-btn"
+                >
+                  <span>Reset</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Create Area: Contains model-specific creation fields and submit and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="create-area" class="rel flexc area target">
+            <h2>3. Create New</h2>
+            <p>Fill in all required information and click submit.</p>
+            <div id="create-area-insert" class="rel insert">
+              <!-- Filled by createView -->
+            </div>
+            <div
+              id="create-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="create-area-submit-btn"
+                data-btn="submit"
+                class="rel interface-btn"
+              >
+                <span>Submit</span>
+              </div>
+              <div
+                id="create-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+          <!-- Search Area: Contains model-specific search fields and submit and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="search-area" class="rel flexc area target">
+            <h2>3. Search</h2>
+            <p>Fill in at least one field and click submit.</p>
+            <div id="search-area-insert" class="rel insert">
+              <!-- Filled by searchView -->
+            </div>
+            <div
+              id="search-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="search-area-submit-btn"
+                data-btn="submit"
+                class="rel interface-btn"
+              >
+                <span>Submit</span>
+              </div>
+              <div
+                id="search-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+          <!-- Results Area: Contains results from search and submit and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="results-area" class="rel flexc area target">
+            <h2>4. Search Results</h2>
+            <p>
+              If you chose Update or Delete above, check one below to Update or
+              Delete and click submit.
+            </p>
+            <div id="results-area-insert" class="rel insert">
+              <!-- Filled by resultsView -->
+            </div>
+            <div
+              id="results-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="results-area-submit-btn"
+                data-btn="submit"
+                class="rel interface-btn"
+              >
+                <span>Submit</span>
+              </div>
+              <div
+                id="results-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+          <!-- Update Area: Contains model-specific update fields and submit and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="update-area" class="rel flexc area target">
+            <h2>5. Update</h2>
+            <p>Change or add content and click submit</p>
+            <div id="update-area-insert" class="rel insert">
+              <!-- Filled by updateView -->
+            </div>
+            <div
+              id="update-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="update-area-submit-btn"
+                data-btn="submit"
+                class="rel interface-btn"
+              >
+                <span>Submit</span>
+              </div>
+              <div
+                id="update-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+          <!-- Delete Area: Contains model-specific update fields and submit and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="delete-area" class="rel flexc area target">
+            <h2>5. Delete</h2>
+            <p>
+              If you delete this, you will have to contact the web administrator
+              to retrieve the data.
+            </p>
+            <div id="delete-area-insert" class="rel insert">
+              <!-- Filled by deleteView -->
+            </div>
+            <div
+              id="delete-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="delete-area-submit-btn"
+                data-btn="submit"
+                class="rel interface-btn"
+              >
+                <span>Submit</span>
+              </div>
+              <div
+                id="delete-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+          <!-- Confirmation Area: Contains confirmation of update or delete and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="confirm-area" class="rel flexc area target">
+            <h2>Confirmation</h2>
+            <p>
+              Once the changes are updated, your confirmation will be posted
+              below.
+            </p>
+            <div id="confirm-area-insert" class="rel insert">
+              <!-- Filled by confirmView -->
+            </div>
+            <div
+              id="confirm-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="confirm-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>

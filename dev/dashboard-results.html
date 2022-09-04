@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imports the CSS for the page -->
+    <link rel="stylesheet" href="styles/universal.css" />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+
+    <!-- Imports FontAwesome icon library -->
+    <script
+      src="https://kit.fontawesome.com/5d5f7bf628.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Imports the Javascript for the page -->
+    <script defer type="module" src="scripts/dashboardController.js"></script>
+
+    <!-- Icon and Title: Shows up in browser tab -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/title-icon.ico"
+    />
+    <title>Respect My Sister</title>
+  </head>
+  <body>
+    <!-- Makes an invisible box around everything -->
+    <div id="everything-box" class="rel flexc">
+      <div id="insulation" class="rel flexc">
+        <main class="rel flexc">
+          <!-- Results Area: Contains results from search and submit and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="results-area" class="rel flexc area target">
+            <h2>4. Search Results</h2>
+            <p>
+              If you chose Update or Delete above, check one below to Update or
+              Delete
+            </p>
+            <div id="results-area-insert" class="rel insert">
+              <!-- Filled by resultsView -->
+            </div>
+            <div
+              id="results-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="results-area-submit-btn"
+                data-btn="submit"
+                class="rel interface-btn"
+              >
+                <span>Submit</span>
+              </div>
+              <div
+                id="results-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>

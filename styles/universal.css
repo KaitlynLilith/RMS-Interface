@@ -1,0 +1,216 @@
+/* Imports Source Code Pro font at 500 weight  */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
+
+/* Sets universal CSS variables */
+:root {
+  /* White  */
+  --white: hsl(0, 0%, 100%);
+  /* Black */
+  --black: #000;
+  /* Light Purple */
+  --light-purple: #bc96e6;
+  /* Medium Purple */
+  --medium-purple: #55286f;
+  /* Gold */
+  --gold: #e6b051;
+  /* Almost White */
+  --almost-white: #fdfffc;
+  /* Blackish Purple */
+  --dark-purple: #0c0410;
+}
+
+/* Makes every element into a box that includes margins and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px var(--medium-purple) solid; */
+}
+
+/* UTILITY CLASSES */
+
+/* Gives elements relative position */
+.rel {
+  position: relative;
+}
+
+/* Makes a flex row */
+.flexr {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Makes a flex column */
+.flexc {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Makes flex elements centered */
+.fcenter {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Makes a grid container */
+.grid-container {
+  display: grid;
+}
+
+.italics {
+  font-style: italic;
+}
+
+/* GENERAL PAGE FORMATTING */
+
+/* Effects all elements */
+html {
+  font-family: sans-serif;
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+/* Effects body elements */
+body {
+  position: relative;
+  letter-spacing: 0.25rem;
+  font-weight: 500;
+}
+
+#everything-box {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--almost-white);
+  color: var(--dark-purple);
+}
+
+#insulation {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  /* border: 1px var(--medium-purple) solid; */
+  /* padding: 0.5rem 0 0.5rem 1rem; */
+}
+
+main h2 {
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+main p {
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.area {
+  border: 1px var(--medium-purple) solid;
+  width: 100%;
+}
+
+#form-area {
+}
+
+.list {
+  /* margin: 0.5rem 0 0.5rem 1rem; */
+}
+
+.options {
+}
+
+select {
+  width: 15rem;
+  min-height: 2rem;
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0.3rem 0 0.3rem 1rem;
+}
+
+.interface-btn {
+  border: 1px var(--medium-purple) solid;
+  border-radius: 1rem;
+  width: 15rem;
+  min-height: 2rem;
+  margin: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.interface-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#create-area {
+  display: none;
+  background-color: var(--light-purple);
+}
+
+#search-area {
+  display: none;
+  background-color: var(--light-purple);
+}
+
+#results-area {
+  display: none;
+}
+
+#update-area {
+  display: none;
+  background-color: var(--light-purple);
+}
+
+#delete-area {
+  display: none;
+  background-color: var(--light-purple);
+}
+
+#confirm-area {
+  display: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+input {
+  display: block;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+textarea {
+  display: block;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.tiny {
+  font-size: 10px;
+}
+
+/* RESPONSIVE CSS */
+
+/* Changes settings at 768px screen size to 1023px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Changes the rem base */
+  /* html {
+    font-size: 15px;
+  } */
+}
+
+/* Changes settings at 1024px to 1500px screen size */
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  /* Changes the rem base */
+  /* html {
+    font-size: 20px;
+  } */
+}
+
+/* Changes settings at 1501px screen size */
+@media only screen and (min-width: 1501px) {
+  /* Changes the rem base */
+  /* html {
+    font-size: 25px;
+  } */
+}

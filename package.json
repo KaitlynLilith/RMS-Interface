@@ -1,0 +1,19 @@
+{
+  "name": "rms-interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dashboard.html",
+  "scripts": {
+    "test": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaitlynLilith/RMS-Interface.git"
+  },
+  "author": "KaitlynLilith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaitlynLilith/RMS-Interface/issues"
+  },
+  "homepage": "https://github.com/KaitlynLilith/RMS-Interface#readme"
+}

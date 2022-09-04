@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imports the CSS for the page -->
+    <link rel="stylesheet" href="styles/universal.css" />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+
+    <!-- Imports FontAwesome icon library -->
+    <script
+      src="https://kit.fontawesome.com/5d5f7bf628.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Imports the Javascript for the page -->
+    <script defer type="module" src="scripts/dashboardController.js"></script>
+
+    <!-- Icon and Title: Shows up in browser tab -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/title-icon.ico"
+    />
+    <title>Respect My Sister</title>
+  </head>
+  <body>
+    <!-- Makes an invisible box around everything -->
+    <div id="everything-box" class="rel flexc">
+      <div id="insulation" class="rel flexc">
+        <main class="rel flexc">
+          <!-- Search Area: Contains model-specific search fields and submit and reset buttons -->
+          <!-- Hidden initially -->
+          <div id="search-area" class="rel flexc area target">
+            <h2>3. Search</h2>
+            <p>Fill in at least one field and click submit.</p>
+            <div id="search-area-insert" class="rel insert">
+              <!-- Filled by searchView -->
+            </div>
+            <div
+              id="search-area-submit-reset-box"
+              class="rel flexr submit-reset-box"
+            >
+              <div
+                id="search-area-submit-btn"
+                data-btn="submit"
+                class="rel interface-btn"
+              >
+                <span>Submit</span>
+              </div>
+              <div
+                id="search-area-reset-btn"
+                data-btn="reset"
+                class="rel interface-btn"
+              >
+                <span>Reset</span>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>
