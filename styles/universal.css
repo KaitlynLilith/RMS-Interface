@@ -61,6 +61,13 @@
   font-style: italic;
 }
 
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* GENERAL PAGE FORMATTING */
 
 /* Effects all elements */
@@ -108,9 +115,6 @@ main p {
   width: 100%;
 }
 
-#form-area {
-}
-
 .list {
   /* margin: 0.5rem 0 0.5rem 1rem; */
 }
@@ -119,10 +123,6 @@ main p {
 }
 
 select {
-  width: 15rem;
-  min-height: 2rem;
-  text-align: center;
-  padding: 0.5rem 0 0.5rem 0;
   margin: 0.3rem 0 0.3rem 1rem;
 }
 
@@ -142,36 +142,51 @@ select {
   transform: translate(-50%, -50%);
 }
 
+#category-area {
+  /* display: none; */
+  background-color: var(--light-purple);
+}
+
+#action-area {
+  /* display: none; */
+}
+
 #create-area {
-  display: none;
+  /* display: none; */
   background-color: var(--light-purple);
 }
 
 #search-area {
-  display: none;
+  /* display: none; */
   background-color: var(--light-purple);
 }
 
 #results-area {
-  display: none;
+  /* display: none; */
 }
 
 #update-area {
-  display: none;
+  /* display: none; */
   background-color: var(--light-purple);
 }
 
 #delete-area {
-  display: none;
+  /* display: none; */
   background-color: var(--light-purple);
 }
 
 #confirm-area {
-  display: none;
+  /* display: none; */
+}
+
+#create-area-insert {
+  background-color: var(--light-purple);
+  /* margin-top: 5rem; */
 }
 
 label {
   display: block;
+  font-weight: 700;
   margin: 0.5rem 0 0.5rem 1rem;
 }
 
@@ -187,6 +202,57 @@ textarea {
 
 .tiny {
   font-size: 10px;
+}
+.checkbox {
+}
+
+.inline {
+  display: inline-flex;
+}
+
+.input-div {
+  margin-top: 1rem;
+}
+
+.label-add-box {
+  align-items: center;
+}
+
+.icon-btn {
+  background-color: var(--gold);
+  margin-left: 1rem;
+  color: var(--almost-white);
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  letter-spacing: 0;
+  font-size: 0.8rem;
+}
+
+.input-row {
+  align-items: center;
+}
+
+th {
+  font-size: 1rem;
+}
+
+.thumbnail-div {
+  margin: 0.5rem 0 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+.thumbnail-x-btn-box {
+  margin-right: 2rem;
+}
+
+.thumbnail-box {
+  height: 6rem;
+  width: 6rem;
+}
+
+.thumbnail {
+  object-fit: contain;
 }
 
 /* RESPONSIVE CSS */

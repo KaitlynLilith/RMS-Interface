@@ -38,262 +38,4669 @@
         <main class="rel flexc">
           <!-- Chapter Create -->
           <div id="create-area-insert" class="rel insert">
-            <form>
-              <label for="chapterName">Chapter name:</label>
-              <input
-                type="text"
-                id="chapterName"
-                name="chapterName"
-                size="30"
-                required
-              />
+            <form class="rel">
+              <div class="input-div rel">
+                <label for="chapterName">Chapter Name:</label>
+                <input
+                  type="text"
+                  id="chapterName"
+                  name="chapterName"
+                  size="30"
+                  required
+                />
+              </div>
 
-              <label for="street1">Address:</label>
-              <input
-                type="text"
-                id="street1"
-                name="street1"
-                maxlength="254"
-                size="30"
-                required
-              />
+              <div class="input-div rel">
+                <label for="street1">Address:</label>
+                <input
+                  type="text"
+                  id="street1"
+                  name="street1"
+                  maxlength="254"
+                  size="30"
+                  required
+                />
+              </div>
 
-              <label for="street2">Apartment, Suite, etc:</label>
-              <input
-                type="text"
-                id="street2"
-                name="street2"
-                maxlength="254"
-                size="30"
-              />
+              <div class="input-div rel">
+                <label for="street2">Apartment, Suite, etc:</label>
+                <input
+                  type="text"
+                  id="street2"
+                  name="street2"
+                  maxlength="254"
+                  size="30"
+                />
+              </div>
 
-              <label for="city">City:</label>
-              <input
-                type="text"
-                id="city"
-                name="city"
-                maxlength="100"
-                size="30"
-                required
-              />
+              <div class="input-div rel">
+                <label for="city">City:</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
 
-              <label for="state">State/Province:</label>
-              <input
-                type="text"
-                id="state"
-                name="state"
-                maxlength="100"
-                size="30"
-                required
-              />
+              <div class="input-div rel">
+                <label for="state">State/Province:</label>
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
 
-              <label for="country">Country:</label>
-              <input
-                type="text"
-                id="country"
-                name="country"
-                maxlength="100"
-                size="30"
-                required
-              />
+              <div class="input-div rel">
+                <label for="country">Country:</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
 
-              <label for="postalCode">Postal Code:</label>
-              <input
-                type="text"
-                id="postalCode"
-                name="postalCode"
-                maxlength="11"
-                size="30"
-                required
-              />
+              <div class="input-div rel">
+                <label for="postalCode">Postal Code:</label>
+                <input
+                  type="text"
+                  id="postalCode"
+                  name="postalCode"
+                  maxlength="11"
+                  size="30"
+                  required
+                />
+              </div>
 
-              <label for="emails"
-                >Emails: <span class="tiny">(separated by commas)</span></label
-              >
-              <textarea
-                id="emails"
-                name="emails"
-                rows="5"
-                cols="32"
-                required
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="emails" class="rel">Emails:</label>
+                  <div class="icon-btn rel emails emails-add">
+                    <i
+                      class="fa-solid fa-plus emails emails-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="email"
+                    id="emails-1"
+                    name="emails-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel emails emails-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark emails emails-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="phoneNumbers"
-                >Phone Numbers:
-                <span class="tiny"
-                  >(numbers only, separated by commas)</span
-                ></label
-              >
-              <textarea
-                id="phoneNumbers"
-                name="phoneNumbers"
-                rows="5"
-                cols="32"
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="phoneNumbers" class="rel">Phone Numbers:</label>
+                  <div class="icon-btn rel phoneNumbers phoneNumbers-add">
+                    <i
+                      class="fa-solid fa-plus phoneNumbers phoneNumbers-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="tel"
+                    id="phoneNumbers-1"
+                    name="phoneNumbers-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel phoneNumbers phoneNumbers-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark phoneNumbers phoneNumbers-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="about"
-                >About:
-                <span class="tiny"
-                  >(maximum length of 1000 characters)</span
-                ></label
-              >
-              <textarea id="about" name="about" rows="5" cols="32"></textarea>
+              <div class="input-div rel">
+                <label for="about"
+                  >About:
+                  <span class="tiny">(maximum 1000 characters)</span></label
+                >
+                <textarea id="about" name="about" rows="5" cols="30"></textarea>
+              </div>
 
-              <label for="founders"
-                >Founders:
-                <span class="tiny">(User IDs, separated by commas)</span></label
-              >
-              <textarea
-                id="founders"
-                name="founders"
-                rows="5"
-                cols="32"
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="founders" class="rel"
+                    >Founders: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel founders founders-add">
+                    <i
+                      class="fa-solid fa-plus founders founders-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="founders-1"
+                    name="founders-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel founders founders-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark founders founders-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="chairpersons"
-                >Chairpersons:
-                <span class="tiny">(User IDs, separated by commas)</span></label
-              >
-              <textarea
-                id="chairpersons"
-                name="chairpersons"
-                rows="5"
-                cols="32"
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="chairpersons" class="rel"
+                    >Chairpersons: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel chairpersons chairpersons-add">
+                    <i
+                      class="fa-solid fa-plus chairpersons chairpersons-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="chairpersons-1"
+                    name="chairpersons-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel chairpersons chairpersons-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark chairpersons chairpersons-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="users"
-                >Users:<span class="tiny"
-                  >(User IDs, separated by commas)</span
-                ></label
-              >
-              <textarea id="users" name="users" rows="5" cols="32"></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="users" class="rel"
+                    >Users: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel users users-add">
+                    <i class="fa-solid fa-plus users users-add abs-center"></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="users-1"
+                    name="users-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel users users-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark users users-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="locationServing"
-                >Locations Serving:
-                <span class="tiny">(separated by commas)</span></label
-              >
-              <textarea
-                id="locationServing"
-                name="locationServing"
-                rows="5"
-                cols="32"
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="locationServing" class="rel"
+                    >Locations Serving:</label
+                  >
+                  <div class="icon-btn rel locationServing locationServing-add">
+                    <i
+                      class="fa-solid fa-plus locationServing locationServing-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="locationServing-1"
+                    name="locationServing-1"
+                    size="30"
+                  />
+                  <div
+                    class="icon-btn rel locationServing locationServing-1-x-btn"
+                  >
+                    <i
+                      class="fa-solid fa-xmark locationServing locationServing-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="services"
-                >Services:
-                <span class="tiny">(separated by commas)</span></label
-              >
-              <textarea
-                id="services"
-                name="services"
-                rows="5"
-                cols="32"
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="services" class="rel">Services:</label>
+                  <div class="icon-btn rel services services-add">
+                    <i
+                      class="fa-solid fa-plus services services-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="services-1"
+                    name="services-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel services services-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark services services-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="organizingGroups"
-                >Organizing Groups:
-                <span class="tiny">(separated by commas)</span></label
-              >
-              <textarea
-                id="organizingGroups"
-                name="organizingGroups"
-                rows="5"
-                cols="32"
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="organizingGroups" class="rel"
+                    >Organizing Groups:</label
+                  >
+                  <div
+                    class="icon-btn rel organizingGroups organizingGroups-add"
+                  >
+                    <i
+                      class="fa-solid fa-plus organizingGroups organizingGroups-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="organizingGroups-1"
+                    name="organizingGroups-1"
+                    size="30"
+                  />
+                  <div
+                    class="icon-btn rel organizingGroups organizingGroups-1-x-btn"
+                  >
+                    <i
+                      class="fa-solid fa-xmark organizingGroups organizingGroups-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="sponsors"
-                >Sponsors:
-                <span class="tiny">(separated by commas)</span></label
-              >
-              <textarea
-                id="sponsors"
-                name="sponsors"
-                rows="5"
-                cols="32"
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="sponsors" class="rel">Sponsors:</label>
+                  <div class="icon-btn rel sponsors sponsors-add">
+                    <i
+                      class="fa-solid fa-plus sponsors sponsors-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="sponsors-1"
+                    name="sponsors-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel sponsors sponsors-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark sponsors sponsors-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="keywords"
-                >Keywords:
-                <span class="tiny">(separated by commas)</span></label
-              >
-              <textarea
-                id="keywords"
-                name="keywords"
-                rows="5"
-                cols="32"
-              ></textarea>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="keywords" class="rel">Keywords:</label>
+                  <div class="icon-btn rel keywords keywords-add">
+                    <i
+                      class="fa-solid fa-plus keywords keywords-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="keywords-1"
+                    name="keywords-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel keywords keywords-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark keywords keywords-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
 
-              <label for="url">URL:</label>
-              <input type="text" id="url" name="url" size="30" />
+              <div class="input-div rel">
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" size="30" />
+              </div>
 
-              <label for="notes"
-                >Notes: <span class="tiny">(separated by commas)</span></label
-              >
-              <textarea id="notes" name="notes" rows="5" cols="32"></textarea>
+              <div class="input-div rel">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+              </div>
 
-              <label for="imageCover">Select a Cover Image:</label>
-              <input type="file" id="imageCover" name="imageCover" />
+              <div class="input-div rel">
+                <label for="imageCover">Select a Cover Image:</label>
+                <input type="file" id="imageCover" name="imageCover" />
+              </div>
 
-              <label for="images">Select an Image:</label>
-              <input type="file" id="images" name="images" />
+              <div class="input-div rel">
+                <label for="images">Select up to 5 other images:</label>
+                <input type="file" id="images" name="images" />
+              </div>
             </form>
           </div>
           <!-- Event Create -->
           <div id="create-area-insert" class="rel insert">
-            <form>
-              <!-- <label for="something">Something:</label>
-              <input type="text" id="something" name="something" />
-              <label for="something">Something:</label>
-              <input type="text" id="something" name="something" />
-              <label for="something">Something:</label>
-              <input type="text" id="something" name="something" /> -->
+            <form class="rel">
+              <div class="input-div rel">
+                <label for="eventName">Event Name:</label>
+                <input
+                  type="text"
+                  id="eventName"
+                  name="eventName"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="summary">Summary: </label>
+                <textarea
+                  id="summary"
+                  name="summary"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="description">Description: </label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="performers" class="rel">Performers:</label>
+                  <div class="icon-btn rel performers performers-add">
+                    <i
+                      class="fa-solid fa-plus performers performers-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="performers-1"
+                    name="performers-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel performers performers-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark performers performers-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="startDate">Start Date and Time:</label>
+                <input
+                  type="date"
+                  id="startDateDate"
+                  name="startDateDate"
+                  class="inline"
+                />
+                <input
+                  type="time"
+                  id="startDateTime"
+                  name="startDateTime"
+                  class="inline"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="endDate">End Date and Time:</label>
+                <input
+                  type="date"
+                  id="endDateDate"
+                  name="endDate"
+                  class="inline"
+                />
+                <input
+                  type="time"
+                  id="endDateTime"
+                  name="endDateTime"
+                  class="inline"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label
+                  >Type of Event:
+                  <span class="tiny">(choose all that apply)</span></label
+                >
+
+                <div class="checkbox-box rel flexr">
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventType-1"
+                      name="eventType-1"
+                      value="Chapter"
+                      class="inline"
+                    />
+                    <label for="eventType-1" class="inline">Chapter</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventType-2"
+                      name="eventType-2"
+                      value="Organization"
+                      class="inline"
+                    />
+                    <label for="eventType-2" class="inline">Organization</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventType-3"
+                      name="eventType-3"
+                      value="Community"
+                      class="inline"
+                    />
+                    <label for="eventType-3" class="inline">Community</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventType-4"
+                      name="eventType-4"
+                      value="Fundraiser"
+                      class="inline"
+                    />
+                    <label for="eventType-4" class="inline">Fundraiser</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventType-5"
+                      name="eventType-5"
+                      value="Outdoor"
+                      class="inline"
+                    />
+                    <label for="eventType-5" class="inline">Outdoor</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="eventSchedule" class="rel">Event Schedule:</label>
+                  <div class="icon-btn rel eventSchedule eventSchedule-add">
+                    <i
+                      class="fa-solid fa-plus eventSchedule eventSchedule-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>More</th>
+                    <th></th>
+                  </tr>
+                  <tr id="eventSchedule-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="date"
+                        id="eventSchedule-1-date"
+                        name="eventSchedule-1-date"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="time"
+                        id="eventSchedule-1-time"
+                        name="eventSchedule-1-time"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="eventSchedule-1-activity"
+                        name="eventSchedule-1-activity"
+                        size="30"
+                      />
+                    </td>
+                    <td>
+                      <a href="#" id="eventSchedule-1-activity-link">More...</a>
+                    </td>
+                    <td>
+                      <div
+                        class="icon-btn rel eventSchedule eventSchedule-1-x-btn"
+                      >
+                        <i
+                          class="fa-solid fa-xmark eventSchedule eventSchedule-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <label
+                  >Event Status:
+                  <span class="tiny">(choose all that apply)</span></label
+                >
+
+                <div class="checkbox-box rel flexr">
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventStatus-1"
+                      name="eventStatus-1"
+                      value="volunteers"
+                      class="inline"
+                    />
+                    <label for="eventStatus-1" class="inline"
+                      >Needs Volunteers</label
+                    >
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventStatus-2"
+                      name="eventStatus-2"
+                      value="Happening"
+                      class="inline"
+                    />
+                    <label for="eventStatus-2" class="inline">Happening</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventStatus-3"
+                      name="eventStatus-3"
+                      value="Canceled"
+                      class="inline"
+                    />
+                    <label for="eventStatus-3" class="inline">Canceled</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="eventStatus-4"
+                      name="eventStatus-4"
+                      value="Postponed"
+                      class="inline"
+                    />
+                    <label for="eventStatus-4" class="inline">Postponed</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="masterOfCeremonies" class="rel"
+                    >masterOfCeremonies:
+                    <span class="tiny">(User IDs)</span></label
+                  >
+                  <div
+                    class="icon-btn rel masterOfCeremonies masterOfCeremonies-add"
+                  >
+                    <i
+                      class="fa-solid fa-plus masterOfCeremonies masterOfCeremonies-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="masterOfCeremonies-1"
+                    name="masterOfCeremonies-1"
+                    size="30"
+                  />
+                  <div
+                    class="icon-btn rel masterOfCeremonies masterOfCeremonies-1-x-btn"
+                  >
+                    <i
+                      class="fa-solid fa-xmark masterOfCeremonies masterOfCeremonies-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="users" class="rel"
+                    >Users: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel users users-add">
+                    <i class="fa-solid fa-plus users users-add abs-center"></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="users-1"
+                    name="users-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel users users-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark users users-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="chairpersons" class="rel"
+                    >Chairpersons: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel chairpersons chairpersons-add">
+                    <i
+                      class="fa-solid fa-plus chairpersons chairpersons-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="chairpersons-1"
+                    name="chairpersons-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel chairpersons chairpersons-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark chairpersons chairpersons-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="inLanguage" class="rel">inLanguage:</label>
+                  <div class="icon-btn rel inLanguage inLanguage-add">
+                    <i
+                      class="fa-solid fa-plus inLanguage inLanguage-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="inLanguage-1"
+                    name="inLanguage-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel inLanguage inLanguage-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark inLanguage inLanguage-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label>Handicap Accessible:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="handicapAccessible-true"
+                      name="handicapAccessible"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="handicapAccessible-true" class="inline"
+                      >Yes</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="handicapAccessible-false"
+                      name="handicapAccessible"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="handicapAccessible-false" class="inline"
+                      >No</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="price" class="rel">Price:</label>
+                  <div class="icon-btn rel price price-add">
+                    <i class="fa-solid fa-plus price price-add abs-center"></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Group</th>
+                    <th>Group Price</th>
+                    <th></th>
+                  </tr>
+                  <tr id="price-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="price-1-group"
+                        name="price-1-group"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="price-1-groupPrice"
+                        name="price-1-groupPrice"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <div class="icon-btn rel price price-1-x-btn">
+                        <i
+                          class="fa-solid fa-xmark price price-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="location" class="rel">Location:</label>
+                  <div class="icon-btn rel location location-add">
+                    <i
+                      class="fa-solid fa-plus location location-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="location-1"
+                    name="location-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel location location-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark location location-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label>Attendance Mode:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="attendanceMode-in-person"
+                      name="attendanceMode"
+                      value="in-person"
+                      class="inline"
+                    />
+                    <label for="attendanceMode-in-person" class="inline"
+                      >In-person</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="attendanceMode-virtual"
+                      name="attendanceMode"
+                      value="virtual"
+                      class="inline"
+                    />
+                    <label for="attendanceMode-virtual" class="inline"
+                      >Virtual</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="attendanceMode-hybrid"
+                      name="attendanceMode"
+                      value="hybrid"
+                      class="inline"
+                    />
+                    <label for="attendanceMode-hybrid" class="inline"
+                      >Hybrid</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="maximumAttendeeCapacity"
+                  >Maximum Attendee Capacity:</label
+                >
+                <input
+                  type="number"
+                  id="maximumAttendeeCapacity"
+                  name="maximumAttendeeCapacity"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="maximumPhysicalAttendeeCapacity"
+                  >Maximum Physical Attendee Capacity:</label
+                >
+                <input
+                  type="number"
+                  id="maximumPhysicalAttendeeCapacity"
+                  name="maximumPhysicalAttendeeCapacity"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="maximumVirtualAttendeeCapacity"
+                  >Maximum Virtual Attendee Capacity:</label
+                >
+                <input
+                  type="number"
+                  id="maximumVirtualAttendeeCapacity"
+                  name="maximumVirtualAttendeeCapacity"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label>Recurring:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="recurring-true"
+                      name="recurring"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="recurring-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="recurring-false"
+                      name="recurring"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="recurring-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="frequency">Frequency:</label>
+                <select id="frequency" class="rel flexr options">
+                  <option value="select" selected>Select</option>
+                  <option value="annually">Annually</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="bi-weekly">Bi-weekly</option>
+                  <option value="weekly">Weekly</option>
+                </select>
+              </div>
+
+              <div class="input-div rel">
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="subEvents" class="rel">Sub-Events:</label>
+                  <div class="icon-btn rel subEvents subEvents-add">
+                    <i
+                      class="fa-solid fa-plus subEvents subEvents-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Event</th>
+                    <th>URL</th>
+                    <th></th>
+                  </tr>
+                  <tr id="subEvents-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="subEvents-1-event"
+                        name="subEvents-1-event"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="subEvents-1-url"
+                        name="subEvents-1-url"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <div class="icon-btn rel subEvents subEvents-1-x-btn">
+                        <i
+                          class="fa-solid fa-xmark subEvents subEvents-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="superEvent" class="rel">Super-Event:</label>
+                </div>
+                <table>
+                  <tr>
+                    <th>Event</th>
+                    <th>URL</th>
+                  </tr>
+                  <tr id="superEvent-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="superEvent-1-event"
+                        name="superEvent-1-event"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="superEvent-1-url"
+                        name="superEvent-1-url"
+                        class="inline"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="typicalAgeRange" class="rel"
+                    >Typical Age Range:</label
+                  >
+                  <div class="icon-btn rel typicalAgeRange typicalAgeRange-add">
+                    <i
+                      class="fa-solid fa-plus typicalAgeRange typicalAgeRange-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Lower Age</th>
+                    <th>Higher Age</th>
+                    <th></th>
+                  </tr>
+                  <tr id="typicalAgeRange-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="typicalAgeRange-1-event"
+                        name="typicalAgeRange-1-event"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="typicalAgeRange-1-url"
+                        name="typicalAgeRange-1-url"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <div
+                        class="icon-btn rel typicalAgeRange typicalAgeRange-1-x-btn"
+                      >
+                        <i
+                          class="fa-solid fa-xmark typicalAgeRange typicalAgeRange-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="audience" class="rel">Audience:</label>
+                  <div class="icon-btn rel audience audience-add">
+                    <i
+                      class="fa-solid fa-plus audience audience-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="audience-1"
+                    name="audience-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel audience audience-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark audience audience-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="sponsors" class="rel">Sponsors:</label>
+                  <div class="icon-btn rel sponsors sponsors-add">
+                    <i
+                      class="fa-solid fa-plus sponsors sponsors-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="sponsors-1"
+                    name="sponsors-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel sponsors sponsors-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark sponsors sponsors-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="keywords" class="rel">Keywords:</label>
+                  <div class="icon-btn rel keywords keywords-add">
+                    <i
+                      class="fa-solid fa-plus keywords keywords-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="keywords-1"
+                    name="keywords-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel keywords keywords-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark keywords keywords-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="vendors" class="rel"
+                    >Vendors: <span class="tiny">(Vendor IDs)</span></label
+                  >
+                  <div class="icon-btn rel vendors vendors-add">
+                    <i
+                      class="fa-solid fa-plus vendors vendors-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="vendors-1"
+                    name="vendors-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel vendors vendors-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark vendors vendors-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="logo">Logo:</label>
+                <input type="file" id="logo" name="logo" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="imageCover">Select a Cover Image:</label>
+                <input type="file" id="imageCover" name="imageCover" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="images">Select up to 5 other images:</label>
+                <input type="file" id="images" name="images" />
+              </div>
             </form>
           </div>
           <!-- Faqs Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <label for="question">Question:</label>
+                <textarea
+                  id="question"
+                  name="question"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="answer">Answer:</label>
+                <textarea
+                  id="answer"
+                  name="answer"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="links" class="rel"
+                    >Links: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel links links-add">
+                    <i class="fa-solid fa-plus links links-add abs-center"></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="links-1"
+                    name="links-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel links links-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark links links-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="categories" class="rel">Categories:</label>
+                  <div class="icon-btn rel categories categories-add">
+                    <i
+                      class="fa-solid fa-plus categories categories-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="categories-1"
+                    name="categories-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel categories categories-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark categories categories-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+              </div>
+            </form>
           </div>
           <!-- Invoice Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="lineItems" class="rel">Line Items:</label>
+                  <div class="icon-btn rel lineItems lineItems-add">
+                    <i
+                      class="fa-solid fa-plus lineItems lineItems-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Product ID</th>
+                    <th>Quantity</th>
+                    <th>Cost/Each</th>
+                    <th></th>
+                  </tr>
+                  <tr id="lineItems-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="lineItems-1-product"
+                        name="lineItems-1-product"
+                        class="inline"
+                        size="30"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        id="lineItems-1-quantity"
+                        name="lineItems-1-quantity"
+                        class="inline"
+                        size="10"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        id="lineItems-1-costEach"
+                        name="lineItems-1-costEach"
+                        size="10"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <div class="icon-btn rel lineItems lineItems-1-x-btn">
+                        <i
+                          class="fa-solid fa-xmark lineItems lineItems-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <label for="vendor">Vendor ID:</label>
+                <input type="text" id="vendor" name="vendor" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label
+                  >Transaction Type:
+                  <span class="tiny">(choose all that apply)</span></label
+                >
+
+                <div class="checkbox-box rel flexr">
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-1"
+                      name="transactionType-1"
+                      value="single"
+                      class="inline"
+                    />
+                    <label for="transactionType-1" class="inline">Single</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-2"
+                      name="transactionType-2"
+                      value="recurring"
+                      class="inline"
+                    />
+                    <label for="transactionType-2" class="inline"
+                      >Recurring</label
+                    >
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-3"
+                      name="transactionType-3"
+                      value="consignment"
+                      class="inline"
+                    />
+                    <label for="transactionType-3" class="inline"
+                      >Consignment</label
+                    >
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-4"
+                      name="transactionType-4"
+                      value="purchase"
+                      class="inline"
+                    />
+                    <label for="transactionType-4" class="inline"
+                      >Purchase</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="transactionMode">Transaction Mode:</label>
+                <select id="transactionMode" class="rel flexr options">
+                  <option value="select" selected>Select</option>
+                  <option value="cash">Cash</option>
+                  <option value="check">Check</option>
+                  <option value="card">Card</option>
+                  <option value="property-small">Property-Small</option>
+                  <option value="property-large">Property-Large</option>
+                </select>
+              </div>
+
+              <div class="input-div rel">
+                <label for="taxRate">Tax Rate:</label>
+                <input type="number" id="taxRate" name="taxRate" min="0" />
+              </div>
+
+              <div class="input-div rel">
+                <label>Tax Includes Shipping:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="taxIncludesShipping-true"
+                      name="taxIncludesShipping"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="taxIncludesShipping-true" class="inline"
+                      >Yes</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="taxIncludesShipping-false"
+                      name="taxIncludesShipping"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="taxIncludesShipping-false" class="inline"
+                      >No</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="shippingCost">Shipping Cost:</label>
+                <input
+                  type="number"
+                  id="shippingCost"
+                  name="shippingCost"
+                  min="0"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="submitDate">Submit Date:</label>
+                <input type="date" id="submitDate" name="submitDate" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="deliveryDate">Delivery Date:</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" />
+              </div>
+
+              <div class="input-div rel">
+                <label>Products Delivered:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="productsDelivered-true"
+                      name="productsDelivered"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="productsDelivered-true" class="inline"
+                      >Yes</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="productsDelivered-false"
+                      name="productsDelivered"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="productsDelivered-false" class="inline"
+                      >No</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="paymentDate">Payment Date:</label>
+                <input type="date" id="paymentDate" name="paymentDate" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="paymentDueDate">Payment Due Date:</label>
+                <input type="date" id="paymentDueDate" name="paymentDueDate" />
+              </div>
+
+              <div class="input-div rel">
+                <label>Paid:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="paid-true"
+                      name="paid"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="paid-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="paid-false"
+                      name="paid"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="paid-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label>Recorded:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="recorded-true"
+                      name="recorded"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="recorded-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="recorded-false"
+                      name="recorded"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="recorded-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="checkNumber">Check Number:</label>
+                <input
+                  type="text"
+                  id="checkNumber"
+                  name="checkNumber"
+                  size="30"
+                />
+              </div>
+            </form>
           </div>
           <!-- Media Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <label for="mediaTitle">Media Title:</label>
+                <input
+                  type="text"
+                  id="mediaTitle"
+                  name="mediaTitle"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="summary">Summary: </label>
+                <textarea
+                  id="summary"
+                  name="summary"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="description">Description: </label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="storageLocation">Storage Location:</label>
+                <input
+                  type="text"
+                  id="storageLocation"
+                  name="storageLocation"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label>Featured:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="featured-true"
+                      name="featured"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="featured-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="featured-false"
+                      name="featured"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="featured-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="mediaCollection" class="rel"
+                    >Media Collections:</label
+                  >
+                  <div class="icon-btn rel mediaCollection mediaCollection-add">
+                    <i
+                      class="fa-solid fa-plus mediaCollection mediaCollection-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="mediaCollection-1"
+                    name="mediaCollection-1"
+                    size="30"
+                    required
+                  />
+                  <div
+                    class="icon-btn rel mediaCollection mediaCollection-1-x-btn"
+                  >
+                    <i
+                      class="fa-solid fa-xmark mediaCollection mediaCollection-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="isSimilarTo" class="rel"
+                    >Is Similar To: <span class="tiny">(Media IDs)</span></label
+                  >
+                  <div class="icon-btn rel isSimilarTo isSimilarTo-add">
+                    <i
+                      class="fa-solid fa-plus isSimilarTo isSimilarTo-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="isSimilarTo-1"
+                    name="isSimilarTo-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel isSimilarTo isSimilarTo-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark isSimilarTo isSimilarTo-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="isVariantOf" class="rel"
+                    >Is Variant Of: <span class="tiny">(Media IDs)</span></label
+                  >
+                  <div class="icon-btn rel isVariantOf isVariantOf-add">
+                    <i
+                      class="fa-solid fa-plus isVariantOf isVariantOf-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="isVariantOf-1"
+                    name="isVariantOf-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel isVariantOf isVariantOf-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark isVariantOf isVariantOf-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="predecessorOf" class="rel"
+                    >Predecessor Of:
+                    <span class="tiny">(Media IDs)</span></label
+                  >
+                  <div class="icon-btn rel predecessorOf predecessorOf-add">
+                    <i
+                      class="fa-solid fa-plus predecessorOf predecessorOf-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="predecessorOf-1"
+                    name="predecessorOf-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel predecessorOf predecessorOf-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark predecessorOf predecessorOf-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="successorOf" class="rel"
+                    >Successor Of: <span class="tiny">(Media IDs)</span></label
+                  >
+                  <div class="icon-btn rel successorOf successorOf-add">
+                    <i
+                      class="fa-solid fa-plus successorOf successorOf-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="successorOf-1"
+                    name="successorOf-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel successorOf successorOf-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark successorOf successorOf-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="categories" class="rel">Categories:</label>
+                  <div class="icon-btn rel categories categories-add">
+                    <i
+                      class="fa-solid fa-plus categories categories-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="categories-1"
+                    name="categories-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel categories categories-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark categories categories-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="productionDate">Production Date:</label>
+                <input type="date" id="productionDate" name="productionDate" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="releaseDate">Release Date:</label>
+                <input type="date" id="releaseDate" name="releaseDate" />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="inLanguage" class="rel">Language:</label>
+                  <div class="icon-btn rel inLanguage inLanguage-add">
+                    <i
+                      class="fa-solid fa-plus inLanguage inLanguage-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="inLanguage-1"
+                    name="inLanguage-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel inLanguage inLanguage-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark inLanguage inLanguage-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="performers" class="rel">Performers:</label>
+                  <div class="icon-btn rel performers performers-add">
+                    <i
+                      class="fa-solid fa-plus performers performers-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="performers-1"
+                    name="performers-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel performers performers-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark performers performers-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="authors" class="rel">Authors:</label>
+                  <div class="icon-btn rel authors authors-add">
+                    <i
+                      class="fa-solid fa-plus authors authors-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="authors-1"
+                    name="authors-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel authors authors-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark authors authors-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="duration">Duration:</label>
+                <input type="text" id="duration" name="duration" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="pages">Pages:</label>
+                <input
+                  type="number"
+                  id="pages"
+                  name="pages"
+                  size="30"
+                  min="0"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label
+                  >Media Type:
+                  <span class="tiny">(choose all that apply)</span></label
+                >
+
+                <div class="checkbox-box rel flexr">
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="mediaType-1"
+                      name="mediaType-1"
+                      value="e-book"
+                      class="inline"
+                    />
+                    <label for="mediaType-1" class="inline">E-book</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="mediaType-2"
+                      name="mediaType-2"
+                      value="podcastpodcast"
+                      class="inline"
+                    />
+                    <label for="mediaType-2" class="inline">Podcast</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="mediaType-3"
+                      name="mediaType-3"
+                      value="documentary"
+                      class="inline"
+                    />
+                    <label for="mediaType-3" class="inline">Documentary</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="mediaType-4"
+                      name="mediaType-4"
+                      value="forms"
+                      class="inline"
+                    />
+                    <label for="mediaType-4" class="inline">Forms</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="mediaType-5"
+                      name="mediaType-5"
+                      value="pamphlets"
+                      class="inline"
+                    />
+                    <label for="mediaType-5" class="inline">Pamphlets</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="contacts" class="rel"
+                    >Contacts: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel contacts contacts-add">
+                    <i
+                      class="fa-solid fa-plus contacts contacts-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="contacts-1"
+                    name="contacts-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel contacts contacts-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark contacts contacts-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="services" class="rel">Services:</label>
+                  <div class="icon-btn rel services services-add">
+                    <i
+                      class="fa-solid fa-plus services services-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="services-1"
+                    name="services-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel services services-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark services services-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="sponsors" class="rel">Sponsors:</label>
+                  <div class="icon-btn rel sponsors sponsors-add">
+                    <i
+                      class="fa-solid fa-plus sponsors sponsors-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="sponsors-1"
+                    name="sponsors-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel sponsors sponsors-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark sponsors sponsors-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label>Recurring:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="recurring-true"
+                      name="recurring"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="recurring-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="recurring-false"
+                      name="recurring"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="recurring-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="frequency">Frequency:</label>
+                <select id="frequency" class="rel flexr options">
+                  <option value="select" selected>Select</option>
+                  <option value="annually">Annually</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="bi-weekly">Bi-weekly</option>
+                  <option value="weekly">Weekly</option>
+                </select>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="typicalAgeRange" class="rel"
+                    >Typical Age Range:</label
+                  >
+                  <div class="icon-btn rel typicalAgeRange typicalAgeRange-add">
+                    <i
+                      class="fa-solid fa-plus typicalAgeRange typicalAgeRange-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Lower Age</th>
+                    <th>Higher Age</th>
+                    <th></th>
+                  </tr>
+                  <tr id="typicalAgeRange-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="typicalAgeRange-1-event"
+                        name="typicalAgeRange-1-event"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="typicalAgeRange-1-url"
+                        name="typicalAgeRange-1-url"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <div
+                        class="icon-btn rel typicalAgeRange typicalAgeRange-1-x-btn"
+                      >
+                        <i
+                          class="fa-solid fa-xmark typicalAgeRange typicalAgeRange-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="audience" class="rel">Audience:</label>
+                  <div class="icon-btn rel audience audience-add">
+                    <i
+                      class="fa-solid fa-plus audience audience-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="audience-1"
+                    name="audience-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel audience audience-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark audience audience-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="location" class="rel">Location:</label>
+                  <div class="icon-btn rel location location-add">
+                    <i
+                      class="fa-solid fa-plus location location-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="location-1"
+                    name="location-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel location location-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark location location-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="imageCover">Select a Cover Image:</label>
+                <input type="file" id="imageCover" name="imageCover" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="images">Select up to 5 other images:</label>
+                <input type="file" id="images" name="images" />
+              </div>
+            </form>
           </div>
+
           <!-- Media Review Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <label for="review">Review:</label>
+                <textarea
+                  id="review"
+                  name="review"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="rating">Rating:</label>
+                <input
+                  type="number"
+                  id="rating"
+                  name="rating"
+                  min="1"
+                  max="5"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="media">Media ID:</label>
+                <input type="text" id="media" name="media" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="users">User ID:</label>
+                <input type="text" id="users" name="users" size="30" />
+              </div>
+            </form>
           </div>
           <!-- Product Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <label for="productName">Product Name:</label>
+                <input
+                  type="text"
+                  id="productName"
+                  name="productName"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="price" class="rel">Price:</label>
+                  <div class="icon-btn rel price price-add">
+                    <i class="fa-solid fa-plus price price-add abs-center"></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Group</th>
+                    <th>Group Price</th>
+                    <th></th>
+                  </tr>
+                  <tr id="price-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="price-1-group"
+                        name="price-1-group"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="price-1-groupPrice"
+                        name="price-1-groupPrice"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <div class="icon-btn rel price price-1-x-btn">
+                        <i
+                          class="fa-solid fa-xmark price price-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="priceDiscount" class="rel">Price Discount:</label>
+                  <div class="icon-btn rel priceDiscount priceDiscount-add">
+                    <i
+                      class="fa-solid fa-plus priceDiscount priceDiscount-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Group</th>
+                    <th>Group Price</th>
+                    <th></th>
+                  </tr>
+                  <tr id="priceDiscount-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="priceDiscount-1-group"
+                        name="priceDiscount-1-group"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="priceDiscount-1-groupDiscount"
+                        name="priceDiscount-1-groupDiscount"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <div
+                        class="icon-btn rel priceDiscount priceDiscount-1-x-btn"
+                      >
+                        <i
+                          class="fa-solid fa-xmark priceDiscount priceDiscount-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <label for="shippingCost">Shipping Cost:</label>
+                <input
+                  type="number"
+                  id="shippingCost"
+                  name="shippingCost"
+                  min="0"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="size">Size:</label>
+                <input type="text" id="size" name="size" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="shippingDetails">Shipping Details:</label>
+                <input
+                  type="text"
+                  id="shippingDetails"
+                  name="shippingDetails"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="color" class="rel">Color:</label>
+                  <div class="icon-btn rel color color-add">
+                    <i class="fa-solid fa-plus color color-add abs-center"></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="color-1"
+                    name="color-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel color color-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark color color-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="summary">Summary: </label>
+                <textarea
+                  id="summary"
+                  name="summary"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="description">Description: </label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="sku">SKU:</label>
+                <input type="text" id="sku" name="sku" sku="30" />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="keywords" class="rel">Keywords:</label>
+                  <div class="icon-btn rel keywords keywords-add">
+                    <i
+                      class="fa-solid fa-plus keywords keywords-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="keywords-1"
+                    name="keywords-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel keywords keywords-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark keywords keywords-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="location" class="rel">Location:</label>
+                  <div class="icon-btn rel location location-add">
+                    <i
+                      class="fa-solid fa-plus location location-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="location-1"
+                    name="location-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel location location-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark location location-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label>Featured:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="featured-true"
+                      name="featured"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="featured-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="featured-false"
+                      name="featured"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="featured-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="itemCondition">Item Condition:</label>
+                <input
+                  type="text"
+                  id="itemCondition"
+                  name="itemCondition"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="productCollection" class="rel"
+                    >Product Collections:</label
+                  >
+                  <div
+                    class="icon-btn rel productCollection productCollection-add"
+                  >
+                    <i
+                      class="fa-solid fa-plus productCollection productCollection-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="productCollection-1"
+                    name="productCollection-1"
+                    size="30"
+                    required
+                  />
+                  <div
+                    class="icon-btn rel productCollection productCollection-1-x-btn"
+                  >
+                    <i
+                      class="fa-solid fa-xmark productCollection productCollection-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="isSimilarTo" class="rel"
+                    >Is Similar To:
+                    <span class="tiny">(Product IDs)</span></label
+                  >
+                  <div class="icon-btn rel isSimilarTo isSimilarTo-add">
+                    <i
+                      class="fa-solid fa-plus isSimilarTo isSimilarTo-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="isSimilarTo-1"
+                    name="isSimilarTo-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel isSimilarTo isSimilarTo-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark isSimilarTo isSimilarTo-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="isVariantOf" class="rel"
+                    >Is Variant Of:
+                    <span class="tiny">(Product IDs)</span></label
+                  >
+                  <div class="icon-btn rel isVariantOf isVariantOf-add">
+                    <i
+                      class="fa-solid fa-plus isVariantOf isVariantOf-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="isVariantOf-1"
+                    name="isVariantOf-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel isVariantOf isVariantOf-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark isVariantOf isVariantOf-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="predecessorOf" class="rel"
+                    >Predecessor Of:
+                    <span class="tiny">(Product IDs)</span></label
+                  >
+                  <div class="icon-btn rel predecessorOf predecessorOf-add">
+                    <i
+                      class="fa-solid fa-plus predecessorOf predecessorOf-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="predecessorOf-1"
+                    name="predecessorOf-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel predecessorOf predecessorOf-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark predecessorOf predecessorOf-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="successorOf" class="rel"
+                    >Successor Of:
+                    <span class="tiny">(Product IDs)</span></label
+                  >
+                  <div class="icon-btn rel successorOf successorOf-add">
+                    <i
+                      class="fa-solid fa-plus successorOf successorOf-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="successorOf-1"
+                    name="successorOf-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel successorOf successorOf-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark successorOf successorOf-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="manufacturer">Manufacturer:</label>
+                <input
+                  type="text"
+                  id="manufacturer"
+                  name="manufacturer"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="categories" class="rel">Categories:</label>
+                  <div class="icon-btn rel categories categories-add">
+                    <i
+                      class="fa-solid fa-plus categories categories-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="categories-1"
+                    name="categories-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel categories categories-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark categories categories-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="countryOfAssembly">Country Of Assembly:</label>
+                <input
+                  type="text"
+                  id="countryOfAssembly"
+                  name="countryOfAssembly"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="countryOfLastProcessing"
+                  >Country Of Last Processing:</label
+                >
+                <input
+                  type="text"
+                  id="countryOfLastProcessing"
+                  name="countryOfLastProcessing"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="countryOfOrigin">Country Of Origin:</label>
+                <input
+                  type="text"
+                  id="countryOfOrigin"
+                  name="countryOfOrigin"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="height">Height:</label>
+                <input type="text" id="height" name="height" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="length">Length:</label>
+                <input type="text" id="length" name="length" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="width">Width:</label>
+                <input type="text" id="width" name="width" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="depth">Depth:</label>
+                <input type="text" id="depth" name="depth" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="features" class="rel">Features:</label>
+                  <div class="icon-btn rel features features-add">
+                    <i
+                      class="fa-solid fa-plus features features-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="features-1"
+                    name="features-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel features features-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark features features-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="material" class="rel">Material:</label>
+                  <div class="icon-btn rel material material-add">
+                    <i
+                      class="fa-solid fa-plus material material-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="material-1"
+                    name="material-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel material material-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark material material-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="textContent">Text Content:</label>
+                <input
+                  type="text"
+                  id="textContent"
+                  name="textContent"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="typicalAgeRange" class="rel"
+                    >Typical Age Range:</label
+                  >
+                  <div class="icon-btn rel typicalAgeRange typicalAgeRange-add">
+                    <i
+                      class="fa-solid fa-plus typicalAgeRange typicalAgeRange-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Lower Age</th>
+                    <th>Higher Age</th>
+                    <th></th>
+                  </tr>
+                  <tr id="typicalAgeRange-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="typicalAgeRange-1-event"
+                        name="typicalAgeRange-1-event"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="typicalAgeRange-1-url"
+                        name="typicalAgeRange-1-url"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <div
+                        class="icon-btn rel typicalAgeRange typicalAgeRange-1-x-btn"
+                      >
+                        <i
+                          class="fa-solid fa-xmark typicalAgeRange typicalAgeRange-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <label for="pattern">Pattern:</label>
+                <input type="text" id="pattern" name="pattern" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="identifier">identifier:</label>
+                <input
+                  type="text"
+                  id="identifier"
+                  name="identifier"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="productionDate">Production Date:</label>
+                <input type="date" id="productionDate" name="productionDate" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="releaseDate">Release Date:</label>
+                <input type="date" id="releaseDate" name="releaseDate" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="slogan">Slogan:</label>
+                <input type="text" id="slogan" name="slogan" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="weight">weight:</label>
+                <input type="text" id="weight" name="weight" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="mpn" class="rel">MPN:</label>
+                  <div class="icon-btn rel mpn mpn-add">
+                    <i class="fa-solid fa-plus mpn mpn-add abs-center"></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="mpn-1"
+                    name="mpn-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel mpn mpn-1-x-btn">
+                    <i class="fa-solid fa-xmark mpn mpn-1-x-btn abs-center"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="other">Other:</label>
+                <textarea id="other" name="other" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="logo">Logo:</label>
+                <input type="file" id="logo" name="logo" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="imageCover">Select a Cover Image:</label>
+                <input type="file" id="imageCover" name="imageCover" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="images">Select up to 5 other images:</label>
+                <input type="file" id="images" name="images" />
+              </div>
+            </form>
           </div>
           <!-- Product Review Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <label for="review">Review:</label>
+                <textarea
+                  id="review"
+                  name="review"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="rating">Rating:</label>
+                <input
+                  type="number"
+                  id="rating"
+                  name="rating"
+                  min="1"
+                  max="5"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="product">Product ID:</label>
+                <input type="text" id="product" name="product" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="users">User ID:</label>
+                <input type="text" id="users" name="users" size="30" />
+              </div>
+            </form>
           </div>
           <!-- Services Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <label for="serviceName">Service:</label>
+                <input
+                  type="text"
+                  id="serviceName"
+                  name="serviceName"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="summary">Summary: </label>
+                <textarea
+                  id="summary"
+                  name="summary"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="description">Description: </label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="5"
+                  cols="30"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="keywords" class="rel">Keywords:</label>
+                  <div class="icon-btn rel keywords keywords-add">
+                    <i
+                      class="fa-solid fa-plus keywords keywords-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="keywords-1"
+                    name="keywords-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel keywords keywords-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark keywords keywords-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="emails" class="rel">Emails:</label>
+                  <div class="icon-btn rel emails emails-add">
+                    <i
+                      class="fa-solid fa-plus emails emails-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="email"
+                    id="emails-1"
+                    name="emails-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel emails emails-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark emails emails-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="phoneNumbers" class="rel">Phone Numbers:</label>
+                  <div class="icon-btn rel phoneNumbers phoneNumbers-add">
+                    <i
+                      class="fa-solid fa-plus phoneNumbers phoneNumbers-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="tel"
+                    id="phoneNumbers-1"
+                    name="phoneNumbers-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel phoneNumbers phoneNumbers-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark phoneNumbers phoneNumbers-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="users" class="rel"
+                    >Users: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel users users-add">
+                    <i class="fa-solid fa-plus users users-add abs-center"></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="users-1"
+                    name="users-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel users users-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark users users-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="founders" class="rel"
+                    >Founders: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel founders founders-add">
+                    <i
+                      class="fa-solid fa-plus founders founders-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="founders-1"
+                    name="founders-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel founders founders-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark founders founders-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="chairpersons" class="rel"
+                    >Chairpersons: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel chairpersons chairpersons-add">
+                    <i
+                      class="fa-solid fa-plus chairpersons chairpersons-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="chairpersons-1"
+                    name="chairpersons-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel chairpersons chairpersons-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark chairpersons chairpersons-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="sponsors" class="rel">Sponsors:</label>
+                  <div class="icon-btn rel sponsors sponsors-add">
+                    <i
+                      class="fa-solid fa-plus sponsors sponsors-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="sponsors-1"
+                    name="sponsors-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel sponsors sponsors-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark sponsors sponsors-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="locationServing" class="rel"
+                    >Locations Serving:</label
+                  >
+                  <div class="icon-btn rel locationServing locationServing-add">
+                    <i
+                      class="fa-solid fa-plus locationServing locationServing-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="locationServing-1"
+                    name="locationServing-1"
+                    size="30"
+                  />
+                  <div
+                    class="icon-btn rel locationServing locationServing-1-x-btn"
+                  >
+                    <i
+                      class="fa-solid fa-xmark locationServing locationServing-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="inLanguage" class="rel">Language:</label>
+                  <div class="icon-btn rel inLanguage inLanguage-add">
+                    <i
+                      class="fa-solid fa-plus inLanguage inLanguage-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="inLanguage-1"
+                    name="inLanguage-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel inLanguage inLanguage-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark inLanguage inLanguage-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="audience" class="rel">Audience:</label>
+                  <div class="icon-btn rel audience audience-add">
+                    <i
+                      class="fa-solid fa-plus audience audience-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="audience-1"
+                    name="audience-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel audience audience-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark audience audience-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="categories" class="rel">Categories:</label>
+                  <div class="icon-btn rel categories categories-add">
+                    <i
+                      class="fa-solid fa-plus categories categories-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="categories-1"
+                    name="categories-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel categories categories-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark categories categories-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label>Needs Volunteers:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="needsVolunteers-true"
+                      name="needsVolunteers"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="needsVolunteers-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="needsVolunteers-false"
+                      name="needsVolunteers"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="needsVolunteers-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="volunteers" class="rel"
+                    >Volunteers: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel volunteers volunteers-add">
+                    <i
+                      class="fa-solid fa-plus volunteers volunteers-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="volunteers-1"
+                    name="volunteers-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel volunteers volunteers-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark volunteers volunteers-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="logo">Logo:</label>
+                <input type="file" id="logo" name="logo" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="imageCover">Select a Cover Image:</label>
+                <input type="file" id="imageCover" name="imageCover" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="images">Select up to 5 other images:</label>
+                <input type="file" id="images" name="images" />
+              </div>
+            </form>
           </div>
           <!-- Transaction Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="lineItems" class="rel">Line Items:</label>
+                  <div class="icon-btn rel lineItems lineItems-add">
+                    <i
+                      class="fa-solid fa-plus lineItems lineItems-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Product ID</th>
+                    <th>Quantity</th>
+                    <th>Price/Each</th>
+                    <th></th>
+                  </tr>
+                  <tr id="lineItems-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="text"
+                        id="lineItems-1-product"
+                        name="lineItems-1-product"
+                        class="inline"
+                        size="30"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        id="lineItems-1-quantity"
+                        name="lineItems-1-quantity"
+                        class="inline"
+                        size="10"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        id="lineItems-1-priceEach"
+                        name="lineItems-1-priceEach"
+                        size="10"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <div class="icon-btn rel lineItems lineItems-1-x-btn">
+                        <i
+                          class="fa-solid fa-xmark lineItems lineItems-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <label
+                  >Type of Transaction:
+                  <span class="tiny">(choose all that apply)</span></label
+                >
+
+                <div class="checkbox-box rel flexr">
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-1"
+                      name="transactionType-1"
+                      value="single"
+                      class="inline"
+                    />
+                    <label for="transactionType-1" class="inline">Single</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-2"
+                      name="transactionType-2"
+                      value="recurring"
+                      class="inline"
+                    />
+                    <label for="transactionType-2" class="inline"
+                      >Recurring</label
+                    >
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-3"
+                      name="transactionType-3"
+                      value="donation-monetary"
+                      class="inline"
+                    />
+                    <label for="transactionType-3" class="inline"
+                      >Donation-Monetary</label
+                    >
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-4"
+                      name="transactionType-4"
+                      value="donation-property"
+                      class="inline"
+                    />
+                    <label for="transactionType-4" class="inline"
+                      >Donation-Property</label
+                    >
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-5"
+                      name="transactionType-5"
+                      value="purchase"
+                      class="inline"
+                    />
+                    <label for="transactionType-5" class="inline"
+                      >Purchase</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="transactionMode">Transaction Mode:</label>
+                <select id="transactionMode" class="rel flexr options">
+                  <option value="select" selected>Select</option>
+                  <option value="online">Online</option>
+                  <option value="store">Store</option>
+                  <option value="organization">Organization</option>
+                  <option value="event">Event</option>
+                  <option value="campaign">Campaign</option>
+                  <option value="phone">Phone</option>
+                </select>
+              </div>
+
+              <div class="input-div rel">
+                <label for="transactionMode">Transaction Mode:</label>
+                <select id="transactionMode" class="rel flexr options">
+                  <option value="select" selected>Select</option>
+                  <option value="cash">Cash</option>
+                  <option value="check">Check</option>
+                  <option value="card">Card</option>
+                  <option value="property-small">Property-Small</option>
+                  <option value="property-large">Property-Large</option>
+                </select>
+              </div>
+
+              <div class="input-div rel">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" name="userId" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="pledgeDate">Pledge Date:</label>
+                <input type="date" id="pledgeDate" name="pledgeDate" />
+              </div>
+
+              <div class="input-div rel">
+                <label>Transaction Paid:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="transactionPaid-true"
+                      name="transactionPaid"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="transactionPaid-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="transactionPaid-false"
+                      name="transactionPaid"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="transactionPaid-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label>Recorded:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="recorded-true"
+                      name="recorded"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="recorded-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="recorded-false"
+                      name="recorded"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="recorded-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label>Anonymus:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="anonymus-true"
+                      name="anonymus"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="anonymus-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="anonymus-false"
+                      name="anonymus"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="anonymus-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="referrer">Referrer:</label>
+                <input type="text" id="referrer" name="referrer" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="checkNumber">Check Number:</label>
+                <input
+                  type="text"
+                  id="checkNumber"
+                  name="checkNumber"
+                  size="30"
+                />
+              </div>
+            </form>
           </div>
           <!-- User Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="givenName">Given Name:</label>
+                <input type="text" id="givenName" name="givenName" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="familyName">Family Name:</label>
+                <input
+                  type="text"
+                  id="familyName"
+                  name="familyName"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="suffix">Suffix:</label>
+                <input type="text" id="suffix" name="suffix" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="about"
+                  >About:
+                  <span class="tiny">(maximum 1000 characters)</span></label
+                >
+                <textarea id="about" name="about" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="street1">Address:</label>
+                <input
+                  type="text"
+                  id="street1"
+                  name="street1"
+                  maxlength="254"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="street2">Apartment, Suite, etc:</label>
+                <input
+                  type="text"
+                  id="street2"
+                  name="street2"
+                  maxlength="254"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="city">City:</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="state">State/Province:</label>
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="country">Country:</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="postalCode">Postal Code:</label>
+                <input
+                  type="text"
+                  id="postalCode"
+                  name="postalCode"
+                  maxlength="11"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="preferredName">Preferred Name:</label>
+                <input
+                  type="text"
+                  id="preferredName"
+                  name="preferredName"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="preferredGender">Preferred Gender:</label>
+                <input
+                  type="text"
+                  id="preferredGender"
+                  name="preferredGender"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="preferredReligion">Preferred Religion:</label>
+                <input
+                  type="text"
+                  id="preferredReligion"
+                  name="preferredReligion"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="race">Race:</label>
+                <input type="text" id="race" name="race" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="ethnicity">Ethnicity:</label>
+                <input type="text" id="ethnicity" name="ethnicity" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="age">Age:</label>
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  size="30"
+                  min="0"
+                  max="120"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="phoneNumbers" class="rel">Phone Numbers:</label>
+                  <div class="icon-btn rel phoneNumbers phoneNumbers-add">
+                    <i
+                      class="fa-solid fa-plus phoneNumbers phoneNumbers-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="tel"
+                    id="phoneNumbers-1"
+                    name="phoneNumbers-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel phoneNumbers phoneNumbers-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark phoneNumbers phoneNumbers-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label>Wants Email:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="wantsEmail-true"
+                      name="wantsEmail"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="wantsEmail-true" class="inline">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="wantsEmail-false"
+                      name="wantsEmail"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="wantsEmail-false" class="inline">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="preferredLanguage">Preferred Language:</label>
+                <input
+                  type="text"
+                  id="preferredLanguage"
+                  name="preferredLanguage"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label>Wants To Volunteer:</label>
+
+                <div class="radio-box rel flexr">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="wantsToVolunteer-true"
+                      name="wantsToVolunteer"
+                      value="true"
+                      class="inline"
+                    />
+                    <label for="wantsToVolunteer-true" class="inline"
+                      >Yes</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="wantsToVolunteer-false"
+                      name="wantsToVolunteer"
+                      value="false"
+                      class="inline"
+                    />
+                    <label for="wantsToVolunteer-false" class="inline"
+                      >No</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="input-div rel">
+                <label
+                  >Role:
+                  <span class="tiny">(choose all that apply)</span></label
+                >
+
+                <div class="checkbox-box rel flexr">
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-1"
+                      name="role-1"
+                      value="user"
+                      class="inline"
+                    />
+                    <label for="role-1" class="inline">User</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-2"
+                      name="role-2"
+                      value="mentor"
+                      class="inline"
+                    />
+                    <label for="role-2" class="inline">Mentor</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-3"
+                      name="role-3"
+                      value="volunteer"
+                      class="inline"
+                    />
+                    <label for="role-3" class="inline">Volunteer</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-4"
+                      name="role-4"
+                      value="donor"
+                      class="inline"
+                    />
+                    <label for="role-4" class="inline">Donor</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-5"
+                      name="role-5"
+                      value="customer"
+                      class="inline"
+                    />
+                    <label for="role-5" class="inline">Customer</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-6"
+                      name="role-6"
+                      value="chapter-member"
+                      class="inline"
+                    />
+                    <label for="role-6" class="inline">Chapter Member</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-7"
+                      name="role-7"
+                      value="chapter-staff"
+                      class="inline"
+                    />
+                    <label for="role-7" class="inline">Chapter Staff</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-8"
+                      name="role-8"
+                      value="chapter-admin"
+                      class="inline"
+                    />
+                    <label for="role-8" class="inline">Chapter Admin</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-9"
+                      name="role-9"
+                      value="vendor"
+                      class="inline"
+                    />
+                    <label for="role-9" class="inline">Vendor</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-10"
+                      name="role-10"
+                      value="staff"
+                      class="inline"
+                    />
+                    <label for="role-10" class="inline">Org Staff</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="role-11"
+                      name="role-11"
+                      value="admin"
+                      class="inline"
+                    />
+                    <label for="role-11" class="inline">Org Admin</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="vendorId">Vendor ID:</label>
+                <input type="text" id="vendorId" name="vendorId" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="chapterId">Chapter ID:</label>
+                <input type="text" id="chapterId" name="chapterId" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for=" memberSince">Member Since:</label>
+                <input
+                  type="text"
+                  id=" memberSince"
+                  name=" memberSince"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="imageCover">Select a Profile Image:</label>
+                <input type="file" id="imageCover" name="imageCover" />
+              </div>
+            </form>
           </div>
           <!-- Vendor Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <div class="input-div rel">
+                <label for="vendorName">Vendor Name:</label>
+                <input
+                  type="text"
+                  id="vendorName"
+                  name="vendorName"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="users" class="rel"
+                    >Users: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel users users-add">
+                    <i class="fa-solid fa-plus users users-add abs-center"></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="users-1"
+                    name="users-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel users users-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark users users-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="street1">Address:</label>
+                <input
+                  type="text"
+                  id="street1"
+                  name="street1"
+                  maxlength="254"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="street2">Apartment, Suite, etc:</label>
+                <input
+                  type="text"
+                  id="street2"
+                  name="street2"
+                  maxlength="254"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="city">City:</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="state">State/Province:</label>
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="country">Country:</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  maxlength="100"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="postalCode">Postal Code:</label>
+                <input
+                  type="text"
+                  id="postalCode"
+                  name="postalCode"
+                  maxlength="11"
+                  size="30"
+                  required
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="emails" class="rel">Emails:</label>
+                  <div class="icon-btn rel emails emails-add">
+                    <i
+                      class="fa-solid fa-plus emails emails-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="email"
+                    id="emails-1"
+                    name="emails-1"
+                    size="30"
+                    required
+                  />
+                  <div class="icon-btn rel emails emails-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark emails emails-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="phoneNumbers" class="rel">Phone Numbers:</label>
+                  <div class="icon-btn rel phoneNumbers phoneNumbers-add">
+                    <i
+                      class="fa-solid fa-plus phoneNumbers phoneNumbers-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="tel"
+                    id="phoneNumbers-1"
+                    name="phoneNumbers-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel phoneNumbers phoneNumbers-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark phoneNumbers phoneNumbers-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="faxNumbers" class="rel">Fax Numbers:</label>
+                  <div class="icon-btn rel faxNumbers faxNumbers-add">
+                    <i
+                      class="fa-solid fa-plus faxNumbers faxNumbers-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="tel"
+                    id="faxNumbers-1"
+                    name="faxNumbers-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel faxNumbers faxNumbers-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark faxNumbers faxNumbers-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="owners" class="rel"
+                    >owners: <span class="tiny">(User IDs)</span></label
+                  >
+                  <div class="icon-btn rel owners owners-add">
+                    <i
+                      class="fa-solid fa-plus owners owners-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="owners-1"
+                    name="owners-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel owners owners-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark owners owners-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="about"
+                  >About:
+                  <span class="tiny">(maximum 1000 characters)</span></label
+                >
+                <textarea id="about" name="about" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" size="30" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="industry">Industry:</label>
+                <select id="industry" class="rel flexr options" required>
+                  <option value="select" selected>Select</option>
+                  <option value="manufacturer">Manufacturer</option>
+                  <option value="wholesaler">Wholesaler</option>
+                  <option value="retailer">Retailer</option>
+                  <option value="service/maintenance">
+                    Service/Maintenance
+                  </option>
+                  <option value="trade show">Trade Show</option>
+                </select>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="vendorType" class="rel">Vendor Type:</label>
+                  <div class="icon-btn rel vendorType vendorType-add">
+                    <i
+                      class="fa-solid fa-plus vendorType vendorType-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="vendorType-1"
+                    name="vendorType-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel vendorType vendorType-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark vendorType vendorType-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label for="yearsEstablishment">Years of Establishment:</label>
+                <input
+                  type="number"
+                  id="yearsEstablishment"
+                  name="yearsEstablishment"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="incCertificate"
+                  >Incorporation Certificate Number:</label
+                >
+                <input
+                  type="text"
+                  id="incCertificate"
+                  name="incCertificate"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <label for="accountNumber">Account Number:</label>
+                <input
+                  type="text"
+                  id="accountNumber"
+                  name="accountNumber"
+                  size="30"
+                />
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="bankNames" class="rel">Bank Names:</label>
+                  <div class="icon-btn rel bankNames bankNames-add">
+                    <i
+                      class="fa-solid fa-plus bankNames bankNames-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="bankNames-1"
+                    name="bankNames-1"
+                    size="30"
+                  />
+                  <div class="icon-btn rel bankNames bankNames-1-x-btn">
+                    <i
+                      class="fa-solid fa-xmark bankNames bankNames-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <label
+                  >Payment Modes:
+                  <span class="tiny">(choose all that apply)</span></label
+                >
+
+                <div class="checkbox-box rel flexr">
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-1"
+                      name="transactionType-1"
+                      value="cash"
+                      class="inline"
+                    />
+                    <label for="transactionType-1" class="inline">Cash</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-2"
+                      name="transactionType-2"
+                      value="check"
+                      class="inline"
+                    />
+                    <label for="transactionType-2" class="inline">Check</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-3"
+                      name="transactionType-3"
+                      value="card"
+                      class="inline"
+                    />
+                    <label for="transactionType-3" class="inline">Card</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-4"
+                      name="transactionType-4"
+                      value="property"
+                      class="inline"
+                    />
+                    <label for="transactionType-4" class="inline"
+                      >Property</label
+                    >
+                  </div>
+
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="transactionType-5"
+                      name="transactionType-5"
+                      value="service"
+                      class="inline"
+                    />
+                    <label for="transactionType-5" class="inline"
+                      >Service</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="serviceDepartment" class="rel"
+                    >Service Department:</label
+                  >
+                  <div
+                    class="icon-btn rel serviceDepartment serviceDepartment-add"
+                  >
+                    <i
+                      class="fa-solid fa-plus serviceDepartment serviceDepartment-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="serviceDepartment-1"
+                    name="serviceDepartment-1"
+                    size="30"
+                  />
+                  <div
+                    class="icon-btn rel serviceDepartment serviceDepartment-1-x-btn"
+                  >
+                    <i
+                      class="fa-solid fa-xmark serviceDepartment serviceDepartment-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="shippingPolicies" class="rel"
+                    >Shipping Policies:</label
+                  >
+                  <div
+                    class="icon-btn rel shippingPolicies shippingPolicies-add"
+                  >
+                    <i
+                      class="fa-solid fa-plus shippingPolicies shippingPolicies-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-row flexr rel">
+                  <input
+                    class="rel"
+                    type="text"
+                    id="shippingPolicies-1"
+                    name="shippingPolicies-1"
+                    size="30"
+                  />
+                  <div
+                    class="icon-btn rel shippingPolicies shippingPolicies-1-x-btn"
+                  >
+                    <i
+                      class="fa-solid fa-xmark shippingPolicies shippingPolicies-1-x-btn abs-center"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-div rel">
+                <div class="label-add-box rel flexr">
+                  <label for="netDiscount" class="rel">Net Discount:</label>
+                  <div class="icon-btn rel netDiscount netDiscount-add">
+                    <i
+                      class="fa-solid fa-plus netDiscount netDiscount-add abs-center"
+                    ></i>
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>Days</th>
+                    <th>Percent</th>
+                    <th></th>
+                  </tr>
+                  <tr id="netDiscount-1">
+                    <td>
+                      <input
+                        class="rel"
+                        type="number"
+                        id="netDiscount-1-group"
+                        name="netDiscount-1-group"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        id="netDiscount-1-groupDiscount"
+                        name="netDiscount-1-groupDiscount"
+                        class="inline"
+                      />
+                    </td>
+                    <td>
+                      <div class="icon-btn rel netDiscount netDiscount-1-x-btn">
+                        <i
+                          class="fa-solid fa-xmark netDiscount netDiscount-1-x-btn abs-center"
+                        ></i>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="input-div rel">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+              </div>
+
+              <div class="input-div rel">
+                <label for="logo">Logo:</label>
+                <input type="file" id="logo" name="logo" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="imageCover">Select a Cover Image:</label>
+                <input type="file" id="imageCover" name="imageCover" />
+              </div>
+
+              <div class="input-div rel">
+                <label for="images">Select up to 5 other images:</label>
+                <input type="file" id="images" name="images" />
+              </div>
+            </form>
           </div>
           <!-- Website Header Create -->
           <div id="create-area-insert" class="rel insert">
-            <form></form>
+            <form>
+              <!--  -->
+              <!--  -->
+
+              <!--  -->
+              <!--  -->
+            </form>
           </div>
-          <!-- Website Information< Create -->
+          <!-- Website Information Create -->
           <div id="create-area-insert" class="rel insert">
             <form></form>
           </div>

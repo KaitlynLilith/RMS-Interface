@@ -32,56 +32,43 @@
     <div id="everything-box" class="rel flexc">
       <div id="insulation" class="rel flexc">
         <main class="rel flexc">
-          <!-- Form Area: Contains Category and Action selection fields and submit and reset buttons -->
+          <!-- Category Area: Contains Category and Action selection fields and submit and reset buttons -->
           <!-- Only div that shows initially -->
-          <div id="form-area" class="rel flexc area">
+          <div id="category-area" class="rel flexc area">
             <form class="rel">
-              <div id="category-list" class="rel flexc list">
-                <h2>1. Choose a Category</h2>
-                <p>What database would you like to use?</p>
-                <select id="categories" class="rel options" required>
-                  <option value="select" selected>Select</option>
-                  <option value="Chapter">Chapters</option>
-                  <option value="Event">Events</option>
-                  <option value="Faqs">FAQs</option>
-                  <option value="Invoice">Invoices</option>
-                  <option value="Media">Media</option>
-                  <option value="MediaReview">Media Reviews</option>
-                  <option value="Product">Products</option>
-                  <option value="ProductReview">Product Reviews</option>
-                  <option value="Service">Services</option>
-                  <option value="Transaction">Transactions</option>
-                  <option value="User">Users</option>
-                  <option value="Vendor">Vendors</option>
-                  <option value="Header">Website Headers</option>
-                  <option value="Info">Website Information</option>
-                </select>
-              </div>
-              <div id="action-list" class="rel flexc list">
-                <h2>2. Choose an Action</h2>
-                <p>What would you like to do in that database?</p>
-                <select id="actions" class="rel flexr options" required>
-                  <option value="select" selected>Select</option>
-                  <option value="create">Create</option>
-                  <option value="search">Search</option>
-                  <option value="update">Update</option>
-                  <option value="delete">Delete</option>
-                </select>
-              </div>
+              <h2>1. Choose a Category</h2>
+              <p>What database would you like to use?</p>
+              <select id="categories" class="rel options" required>
+                <option value="select" selected>Select</option>
+                <option value="Chapter">Chapters</option>
+                <option value="Event">Events</option>
+                <option value="Faqs">FAQs</option>
+                <option value="Invoice">Invoices</option>
+                <option value="Media">Media</option>
+                <option value="MediaReview">Media Reviews</option>
+                <option value="Product">Products</option>
+                <option value="ProductReview">Product Reviews</option>
+                <option value="Service">Services</option>
+                <option value="Transaction">Transactions</option>
+                <option value="User">Users</option>
+                <option value="Vendor">Vendors</option>
+                <option value="Header">Website Headers</option>
+                <option value="Info">Website Information</option>
+              </select>
               <div
-                id="form-area-submit-reset-box"
+                id="category-area-submit-reset-box"
                 class="rel flexr submit-reset-box"
               >
                 <div
-                  id="form-area-submit-btn"
-                  data-btn="submit"
+                  id="category-area-submit-btn"
+                  data-btn="category-submit"
                   class="rel interface-btn"
                 >
                   <span>Submit</span>
                 </div>
                 <div
-                  id="form-area-reset-btn"
-                  data-btn="reset"
+                  id="category-area-reset-btn"
+                  data-btn="category-reset"
                   class="rel interface-btn"
                 >
                   <span>Reset</span>
@@ -89,6 +76,49 @@
               </div>
             </form>
           </div>
+          <!-- What it will look like after the submit button is clicked -->
+          <!-- <div id="category-area" class="rel flexc area">
+            <h2>1. Category: Product Review</h2>
+          </div> -->
+
+          <div id="action-area" class="rel flexc area">
+            <form class="rel">
+              <h2>2. Choose an Action</h2>
+              <p>What would you like to do in that database?</p>
+              <select id="actions" class="rel flexr options" required>
+                <option value="select" selected>Select</option>
+                <option value="create">Create</option>
+                <option value="search">Search</option>
+                <option value="update">Update</option>
+                <option value="delete">Delete</option>
+              </select>
+              <div
+                id="action-area-submit-reset-box"
+                class="rel flexr submit-reset-box"
+              >
+                <div
+                  id="action-area-submit-btn"
+                  data-btn="action-submit"
+                  class="rel interface-btn"
+                >
+                  <span>Submit</span>
+                </div>
+                <div
+                  id="action-area-reset-btn"
+                  data-btn="action-reset"
+                  class="rel interface-btn"
+                >
+                  <span>Reset</span>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- What it will look like after the submit button is clicked -->
+          <!-- <div id="action-area" class="rel flexc area">
+            <h2>2. Action: Update</h2>
+          </div> -->
+
           <!-- Create Area: Contains model-specific creation fields and submit and reset buttons -->
           <!-- Hidden initially -->
           <div id="create-area" class="rel flexc area target">
@@ -103,14 +133,14 @@
             >
               <div
                 id="create-area-submit-btn"
-                data-btn="submit"
+                data-btn="create-submit"
                 class="rel interface-btn"
               >
                 <span>Submit</span>
               </div>
               <div
                 id="create-area-reset-btn"
-                data-btn="reset"
+                data-btn="create-reset"
                 class="rel interface-btn"
               >
                 <span>Reset</span>
@@ -131,14 +161,14 @@
             >
               <div
                 id="search-area-submit-btn"
-                data-btn="submit"
+                data-btn="search-submit"
                 class="rel interface-btn"
               >
                 <span>Submit</span>
               </div>
               <div
                 id="search-area-reset-btn"
-                data-btn="reset"
+                data-btn="search-reset"
                 class="rel interface-btn"
               >
                 <span>Reset</span>
@@ -162,14 +192,14 @@
             >
               <div
                 id="results-area-submit-btn"
-                data-btn="submit"
+                data-btn="results-submit"
                 class="rel interface-btn"
               >
                 <span>Submit</span>
               </div>
               <div
                 id="results-area-reset-btn"
-                data-btn="reset"
+                data-btn="results-reset"
                 class="rel interface-btn"
               >
                 <span>Reset</span>
@@ -190,14 +220,14 @@
             >
               <div
                 id="update-area-submit-btn"
-                data-btn="submit"
+                data-btn="update-submit"
                 class="rel interface-btn"
               >
                 <span>Submit</span>
               </div>
               <div
                 id="update-area-reset-btn"
-                data-btn="reset"
+                data-btn="update-reset"
                 class="rel interface-btn"
               >
                 <span>Reset</span>
@@ -221,14 +251,14 @@
             >
               <div
                 id="delete-area-submit-btn"
-                data-btn="submit"
+                data-btn="delete-submit"
                 class="rel interface-btn"
               >
                 <span>Submit</span>
               </div>
               <div
                 id="delete-area-reset-btn"
-                data-btn="reset"
+                data-btn="delete-reset"
                 class="rel interface-btn"
               >
                 <span>Reset</span>
@@ -252,7 +282,7 @@
             >
               <div
                 id="confirm-area-reset-btn"
-                data-btn="reset"
+                data-btn="confirm-reset"
                 class="rel interface-btn"
               >
                 <span>Reset</span>
