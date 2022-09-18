@@ -179,7 +179,7 @@ select {
   /* display: none; */
 }
 
-#create-area-insert {
+.create-area {
   background-color: var(--light-purple);
   /* margin-top: 5rem; */
 }
@@ -193,16 +193,32 @@ label {
 input {
   display: block;
   margin: 0.5rem 0 0.5rem 1rem;
+  width: 20rem;
 }
 
 textarea {
   display: block;
   margin: 0.5rem 0 0.5rem 1rem;
+  width: 20rem;
+  height: 10rem;
 }
 
 .tiny {
   font-size: 10px;
 }
+
+.bold {
+  font-weight: 700;
+}
+
+.indent-1 {
+  margin-left: 3rem;
+}
+
+.indent-2 {
+  margin-left: 6rem;
+}
+
 .checkbox {
 }
 
@@ -235,6 +251,7 @@ textarea {
 
 th {
   font-size: 1rem;
+  margin: 0.5rem 0 0.5rem 1rem;
 }
 
 .thumbnail-div {
@@ -253,6 +270,37 @@ th {
 
 .thumbnail {
   object-fit: contain;
+}
+
+.update-delete-show {
+  /* display: none; */
+}
+
+.result-box {
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 1px solid var(--light-purple);
+}
+
+.result-p {
+  padding-right: 1rem;
+}
+
+table {
+  /* table-layout: auto !important; */
+  text-align: left;
+}
+
+.result-table th {
+  border-bottom: 1px solid var(--medium-purple);
+  padding: 0 0 0.5rem 0;
+  /* width: auto !important; */
+}
+
+.result-table td {
+  border-bottom: 1px solid var(--light-purple);
+  padding: 0 0 0.5rem 0;
+  width: auto !important;
 }
 
 /* RESPONSIVE CSS */
