@@ -2,7 +2,7 @@
   "name": "rms-interface",
   "version": "1.0.0",
   "description": "",
-  "main": "dashboard.html",
+  "main": "dashboardInitial.html",
   "scripts": {
     "test": "live-server"
   },
