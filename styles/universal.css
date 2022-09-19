@@ -251,7 +251,7 @@ textarea {
 
 th {
   font-size: 1rem;
-  margin: 0.5rem 0 0.5rem 1rem;
+  padding: 0.5rem 0 0.5rem 1rem;
 }
 
 .thumbnail-div {
@@ -301,6 +301,10 @@ table {
   border-bottom: 1px solid var(--light-purple);
   padding: 0 0 0.5rem 0;
   width: auto !important;
+}
+
+.checkbox-box {
+  flex-wrap: wrap;
 }
 
 /* RESPONSIVE CSS */

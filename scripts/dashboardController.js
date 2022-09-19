@@ -1,10 +1,6 @@
-const createArea = document.querySelectorAll(".create-area");
-const addBtns = document.querySelectorAll(".add");
-let xBtns = document.querySelectorAll(".x");
-const submitBtns = document.querySelectorAll(".submit");
-const resetBtns = document.querySelectorAll(".reset");
+const area = document.querySelectorAll(".area");
 
-createArea.forEach(function (element) {
+area.forEach(function (element) {
   element.addEventListener("click", function (e) {
     if (!e.target.classList.contains("btn")) {
       return;
